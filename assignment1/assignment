@@ -1,0 +1,5 @@
+# STEP 1: docker run nginx:latest
+# STEP 2: docker run -p 3000:80 nginx:latest
+# STEP 3: docker logs -f -t <container_id>
+# STEP 4: docker exec -it <container_id> bin/bash
+# STEP 5: docker stop <container_id>
