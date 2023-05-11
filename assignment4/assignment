@@ -1,0 +1,11 @@
+docker volume create dummy_volume
+docker run -it -v dummy_volume:/app busybox sh
+ls
+cd app
+touch busybox
+echo "hello" > busybox
+exit
+docker run -it -v dummy_volume:/app nginx:latest
+docker exec -it <container_id> sh
+cd app
+cat busybox
