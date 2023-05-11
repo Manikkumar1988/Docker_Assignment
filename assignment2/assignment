@@ -1,0 +1,9 @@
+docker build . -t my_golang
+docker run -d --name my_golang_local -p 3000:8080 my_golang:latest
+curl http://localhost:3000
+docker tag my_golang:latest my_golang:v1
+docker history <container_id>
+docker push my_golang:latest
+docker login
+docker tag my_golang:latest maniksrr/my_golang:v1
+docker push maniksrr/my_golang:v1
