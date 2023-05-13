@@ -1,0 +1,4 @@
+docker-compose up -d
+docker-compose logs
+curl localhost:8080
+docker-compose down
